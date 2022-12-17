@@ -1,0 +1,58 @@
+body {
+    background-color: gray;
+    color: white;
+    display: flex;
+}
+
+ul {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+img {
+    display: none;
+    width: 100px;
+    height: 100px;
+}
+
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+
+
+
+
+
+@media screen and (max-width: 768px) { 
+    img {
+        display: flex;
+    }
+    a {
+       color: white; 
+    }
+    ul {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    #hamburger {
+        width: 50px;
+        height: 50px;
+        cursor: pointer;
+    }
+    .mobile-menu {
+        transform: translate(-100px, 0);
+        transition: all 1s;
+        position: absolute;
+        left: -10%;
+        top: 12%;
+    }
+    
+    .mobile-menu-animation {
+        transform: translate(65px, 0);
+    }
+}
